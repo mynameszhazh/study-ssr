@@ -3,7 +3,6 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <p>{{counter}}</p>
     </div>
     <router-view/>
   </div>
@@ -14,7 +13,6 @@ export default {
   name: 'app',
   data() {
     return {
-      counter: 1
     }
   },
 }
