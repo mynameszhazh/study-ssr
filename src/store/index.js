@@ -3,13 +3,28 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+export function createStore() {
+  return new Vue.Store({
+    state: {
+      counter: 108
+    },
+    mutations: {
+      add(state) {
+        state.counter ++
+      },
+      init(state, counter) {
+        state.counter = counter
+      }
+    },
+    actions: {
+      getCounter({commit}) {
+        return new Promise((resolce => {
+          setTimeout(() => {
+            commit('init', Math.random()*100)
+            resolve()
+          }, 1000);
+        }))
+      }
+    }
+  })
+}
