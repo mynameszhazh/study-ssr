@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue' 
+import App from './App.vue'
 import { createRouter } from './router'
 import { createStore } from './store'
 // import store from './store'
@@ -7,9 +7,9 @@ import { createStore } from './store'
 Vue.config.productionTip = false
 
 Vue.mixin({
-  beforeCreate() {
-    const {asyncData} = this.$options
-    if(asyncData) {
+  beforeCreate () {
+    const { asyncData } = this.$options
+    if (asyncData) {
       // 加入了一些不明白的操作
       this.dataPromise = asyncData({
         store: this.$store,
@@ -19,8 +19,8 @@ Vue.mixin({
   }
 })
 
-// 方正所有的东西都是从这里开始 
-export function createApp(context) {
+// 方正所有的东西都是从这里开始
+export function createApp (context) {
   // 创建路由器实例
   const router = createRouter()
   const store = createStore()
@@ -33,5 +33,5 @@ export function createApp(context) {
     render: h => h(App)
   })
 
-  return {app, router, store}
+  return { app, router, store }
 }

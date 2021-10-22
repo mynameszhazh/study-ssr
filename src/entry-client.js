@@ -4,7 +4,7 @@ import { createApp } from './main'
 const { app, router, store } = createApp()
 
 // 这个是在浏览器里面执行的
-if(window.__INITIAL_STATE__) {
+if (window.__INITIAL_STATE__) {
   // 浏览器里面
   store.replaceState(window.__INITIAL_STATE__)
 }

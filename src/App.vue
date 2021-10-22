@@ -11,10 +11,10 @@
 <script>
 export default {
   name: 'app',
-  data() {
+  data () {
     return {
     }
-  },
+  }
 }
 </script>
 
