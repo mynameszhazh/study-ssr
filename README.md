@@ -1,24 +1,7 @@
 # supermall
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
+### 参考文档 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 2021
+- 保存了,我2021年学习 ssr 的痕迹
+
