@@ -1,16 +1,36 @@
 # sst
 
-## 基本知识
+## 运行
 
-### 资源
-- [vue-ssr](https://ssr.vuejs.org)
-  - 官方文档
-### 概念
-- 将vue实例渲染为 html字符串返回, 在前端激活为交互程序
- 
-### 优点
-- seo
-- 首屏加载
+### Project setup
 
-### 服务端知识
-- express
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## 笔记咯
+
+- [here](./note/readme.md)
+  - 基础知识
