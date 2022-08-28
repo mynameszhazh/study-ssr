@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 import Home from '../view/Home.vue'
 import About from '../view/About.vue'
 
-function createRouter() {
+export function createRouter() {
   return new VueRouter({
     routes: [
       {
@@ -19,8 +19,4 @@ function createRouter() {
       },
     ]
   })
-}
-
-export default {
-  createRouter
 }
