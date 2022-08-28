@@ -39,6 +39,7 @@ server.get('*', async (req, res) => {
     // 响应给前端
     res.send(html)
   } catch (error) {
+    console.log(error)
     res.status(500).send('服务端渲染错误~~')
   }
 })

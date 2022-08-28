@@ -28,11 +28,17 @@
 - 没有交互的案列
   - [here](../server/example/01-vue-server-renderer.js)
     - 这里可以处理 所有的静态文件
+- 到了 vue3 的时候
+  - 里面所有的东西全部 放在了 vue 的包里面了
 
 ### 传统的 `服务端` 渲染方式
 - [ssr](../server/example/02-express-ssr.js)
   - 通过 路径拼接的方式, 进行一个 文件的动态加载这样
 
+### vue ssr 处理流程(重点)
+- [ssr](../server/example/03-ssr.js)
+  - 增加 静态文件处理
+  - 
 
 ## 一些插件(库)的使用
 - [plugin](./plugin.md)
