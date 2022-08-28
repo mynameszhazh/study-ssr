@@ -15,6 +15,8 @@ const target = TARGET_NODE ? 'server' : 'client'
 module.exports = defineConfig({
   // 对所有的依赖进行一个 babel 处理吗? 除了 node_modules 里面的东西
   transpileDependencies: true,
+  // 关闭eslint 的检测 
+  lintOnSave: false,
   css: {
     extract: false, // 在 webpack 如果是一个注入 html 的情况 ,是不需要两个文件的
   },
@@ -35,9 +37,8 @@ module.exports = defineConfig({
     // 外置化 应用程序, 减少我打包的 空间
     externals: TARGET_NODE ?
       nodeExternals({
-        // 
         // 不需要内置的一些东西,这个肯定是需要在官网好好 看一下才能更好的理解里面的东西了
-        whiteList: [/\.css$/]
+        allowlist: [/\.css$/]
       }) : undefined,
     // 优化?
     optimization: {
