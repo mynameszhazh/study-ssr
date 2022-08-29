@@ -9,5 +9,5 @@ if (window.__INITIAL_STATE__) {
 }
 
 router.onReady(() => {
-  app.$mount('#app', true)
+  app.$mount('#app')
 })

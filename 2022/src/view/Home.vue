@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    {{ msg }}
+    {{ mas }} - {{this.$store.state.counter}}
   </div>
 </template>
 
@@ -8,9 +8,13 @@
 export default {
   data() {
     return {
-      mas: `value`,
+      mas: 'value',
     };
   },
+  asyncData({store, route}) { 
+    // console.log(route, 'async')
+    return store.dispatch('getCounter')
+  }
 };
 </script>
 

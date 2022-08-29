@@ -17,7 +17,11 @@ export default {
     };
   },
   created() {
-    this.$store.commit("init", 20);
+    // this.$store.commit("init", 20);
+  },
+  asyncData({store, route}) {
+    // console.log(route, 'async')
+    return store.dispatch('getCounter')
   },
   methods: {
     btnClick() {
