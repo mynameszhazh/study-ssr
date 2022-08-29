@@ -33,6 +33,7 @@ server.get('*', async (req, res) => {
     title: 'ssr test',
     url: req.url
   }
+  console.log(req.url, 'exprss ssr url')
   try {
     // 渲染输出
     const html = await renderer.renderToString(context)

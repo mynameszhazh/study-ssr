@@ -6,12 +6,13 @@ export default context => {
   // 确保异步数据的正确性
   return new Promise((resolve, reject) => {
     const { app, router, store } = createApp(context)
-
+    console.log(context.url, 'server, require url')
     // 显示首屏处理
     router.push(context.url)
 
     // 检测路由就绪事件
     router.onReady(() => {
+      console.log('serve, onReady')
       // 获取匹配的路由组件数组
       const matchedComponents = router.getMatchedComponents()
       // 如果等于零的意思吗

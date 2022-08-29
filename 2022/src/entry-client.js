@@ -9,5 +9,6 @@ if (window.__INITIAL_STATE__) {
 }
 
 router.onReady(() => {
+  console.log('client onReady')
   app.$mount('#app')
 })
