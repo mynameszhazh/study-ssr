@@ -1,0 +1,24 @@
+{
+  "name": "study-ssr",
+  "version": "1.0.0",
+  "description": "See [Configuration Reference](https://cli.vuejs.org/config/).",
+  "main": "index.js",
+  "dependencies": {
+    "npx": "^10.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mynameszhazh/study-ssr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mynameszhazh/study-ssr/issues"
+  },
+  "homepage": "https://github.com/mynameszhazh/study-ssr#readme"
+}
