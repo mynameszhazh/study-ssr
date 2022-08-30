@@ -8,3 +8,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 2022
 - [readme](./2022/readme.md)
+
+### nuxt
+- 使用框架来进行一个 服务端渲染
+- [redme](./nuxt/README.md)
